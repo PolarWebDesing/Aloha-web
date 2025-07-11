@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-Light';
+    src: url('fonts/Montserrat-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ppneuemontreal-medium';
+    src: url('fonts/ppneuemontreal-medium.otf');
+}
+
+@font-face {
+    font-family: 'categori elegant';
+    src: url('fonts/categories_elegant/categorieselegantdemo.otf');
+}
+
+@font-face {
+    font-family: 'Montserrat-VariableFont_wght';
+    src: url('fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'creregular';
+    src: url('fonts/creato_display/CreatoDisplay-Regular.otf');
+}
+
+@font-face {
+    font-family: 'cremedio';
+    src: url('fonts/creato_display/CreatoDisplay-Medium.otf');
+}

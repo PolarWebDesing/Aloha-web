@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    animation: entrada 0.5s ease-in-out forwards;
+}
+
+@keyframes entrada {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.background {
+    padding: 38px 0px;
+    background-image: url(imagenes-portafolio/calle.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.contenedor {
+    margin: auto;
+    height: 650px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #e9e5e0af;
+    backdrop-filter: blur(5px);
+    box-shadow: 
+        inset 0 10px 50px rgba(255, 255, 255, 0.21);
+    border-top: 1px solid rgba(255, 255, 255, 0.441);
+    border-left: 1px solid rgba(255, 255, 255, 0.441);
+    border-radius: 20px;
+    display: flex;
+}
+
+
+
+
+
+/* scrolleable - ASIDE*/
+
+
+
+
+aside {
+    border-radius: 20px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    background-color: rgba(246, 110, 110, 0);
+    height: 100%;
+    width: 35%;
+    overflow-y: auto;
+}
+
+/* Toda la barra de scroll */
+.scrolleable::-webkit-scrollbar {
+    width: 1px;
+}
+
+/* Parte que se arrastra */
+.scrolleable::-webkit-scrollbar-thumb {
+    background-color: #3c3c3c;
+    border-radius: 10px;
+}
+
+/* Fondo de la barra (lo que no se arrastra) */
+.scrolleable::-webkit-scrollbar-track {
+    background: #666;
+}
+
+.carta {
+    color: white;
+    font-size: 15px;
+    font-family: 'Montserrat-Light';
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.238);
+    border-radius: 10px;
+    height: 250px;
+    width: 100%;
+    flex-shrink: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+}
+
+.carta div a {
+    letter-spacing: 0.5px;
+    transition: 0.5s;
+    font-family: 'Roboto-Regular';
+    border-radius: 15px;
+    padding: 5px 7px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #0502159d;
+    font-size: 13px;
+}
+
+.carta div a:hover {
+    color: white;
+    background-color: #000000;
+}
+
+.carta h1 {
+    font-size: 30px;
+    font-family: 'creregular';
+    letter-spacing: 2px;
+}
+
+.carta div img {
+    width: 50px;
+}
+
+.AD {
+    width: 150%;
+    padding: 10px 15px;
+    text-align: start;
+}
+
+.AI {
+    font-family: 'creregular';
+    text-align: end;
+    padding: 15px 15px;
+}
+
+.BD {
+    align-content: end;
+    text-align: start;
+    padding: 5px 15px;
+}
+
+.BI {
+    align-content: end;
+    text-align: end;
+    padding: 15px 15px;
+}
+
+.carta1 {
+    overflow: hidden;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('imagenes-portafolio/moda.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.carta2 {
+    overflow: hidden;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('imagenes-portafolio/avion.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.carta3 {
+    overflow: hidden;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('imagenes-portafolio/economia.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.carta4 {
+    overflow: hidden;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('imagenes-portafolio/playa.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.carta5 {
+    overflow: hidden;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('imagenes-portafolio/carcel.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.carta6 {
+    overflow: hidden;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('imagenes-portafolio/bosque.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/* SIN SCROLL */
+
+
+
+.sin_scroll {
+    border-radius: 0 20px 20px 0;
+    overflow: hidden;
+    padding: 20px;
+    height: 100%;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    position: relative;
+    padding: 0 10px;
+}
+
+nav ul li a {
+    font-size: 13px;
+    color: rgb(14, 10, 2);
+    font-family: 'Montserrat-Light';
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    border-bottom: 1px solid #666;
+}
+
+main {
+    margin-top: 78px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+main h1 {
+    margin-bottom: 30px;
+    font-family: 'categori elegant';
+    font-size: 80px;
+}
+
+main h2 {
+    font-family: 'Montserrat-VariableFont_wght';
+    font-weight: 700;
+    color: black;
+    font-size: 18px;
+}
+
+.zona1 ul {
+    display: flex;
+    justify-content: center;
+    gap: 58px;
+    list-style: none;
+}
+
+.a {
+    font-size: 14px;
+    font-family: 'Montserrat-Light';
+    text-decoration: none;
+    color: rgb(14, 10, 2);
+}
+
+.a:hover {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.zona2 ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.aa {
+    transition: 0.4s;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 1px solid black;
+    font-size: 15px;
+    color: #000000;
+    font-family: 'ppneuemontreal-medium';
+    text-decoration: none;
+}
+
+.aa:hover {
+    transition: 0.4s;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+
+.comentarios-box {
+    display: flex;
+    align-items: center;
+    border-bottom: 1.5px solid #999;
+    width: 450px;
+    padding-bottom: 5px;
+    margin: 20px 0px;
+}
+
+.comentarios-box input {
+    width: 900px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #333;
+    font-size: 14px;
+    font-family: 'creregular';
+}
+
+.comentarios-box input::placeholder {
+    color: #333;
+}
+
+footer {
+    font-size: 13px;
+    margin-top: 98px;
+    background-color: #33333300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat-Light';
+}
